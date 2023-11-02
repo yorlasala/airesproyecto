@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: url(./Imagenes/imagen2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor .form .form-header .form-title {
+    font-weight: normal;
+    color: #20AEBF;
+    padding: 14px 0;
+    margin-bottom: 12px;
+}
+
+.contenedor .form .form-header .form-title span {
+    color: #fff;
+}
+
+.contenedor .form {
+    background: rgb(0, 0, 0, .5);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 40px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+#barra-de-navegacion {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto 100px;
+    padding: 30px 30px;
+    color: black;
+}
+
+.contenedor .form .form-label {
+    display: block;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+
+.contenedor .form .form-input,
+.form-textarea {
+    background: rgb(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 0.5px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.contenedor .form .form-textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 15px;
+    font-weight: 800;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px white;
+    transition: all 2s;
+}
+
+
+nav a:hover {
+    color: white;
+    text-shadow: 1px 1px 5px white;
+    background-color: rgb(27, 169, 169);
+    border-radius: 20px;
+}
+
+.contenedor .form .btn-submit {
+    width: 100%;
+    outline: none;
+    background: #20AEBF;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 5s ease;
+    border-radius: 10px;
+}
+
+.contenedor .form .btn-submit:hover {
+    background: rgb(29, 92, 164);
+}

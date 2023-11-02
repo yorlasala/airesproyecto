@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../contactenos.css">
+
+</head>
+
+<body>
+    <div id="barra-de-navegacion">
+        <nav>
+            <a href="./">Inicio</a>
+            <a href="./servicios">Servicios</a>
+            <a href="./contactenos">Contáctenos</a>
+        </nav>
+    </div>
+    <div class="contenedor">
+        <form action="/send" method="POST" class="form">
+            <div class="form-header">
+                <h1 class="form-title"><span>Contáctanos</span></h1>
+            </div>
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" id="nombre" class="form-input" name="nombre">
+
+            <label for="direccion" class="form-label">Dirección:</label>
+            <input type="text" class="form-input" id="direccion" name="direccion">
+
+            <label for="correo" class="form-label">Correo:</label>
+            <input type="email" id="correo" class="form-input" name="correo">
+
+            <label for="subject" class="form-label">Asunto:</label>
+            <input type="text" class="form-input" id="subject" name="asunto">
+
+            <label for="mensaje" class="form-label">Mensaje:</label>
+            <textarea id="mensaje" class="form-textarea" name="mensaje"></textarea>
+
+            <input type="submit" class="btn-submit" value="Enviar solicitud">
+        </form>
+    </div>
+</body>
+
+</html>

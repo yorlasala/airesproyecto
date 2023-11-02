@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../servicios.css">
+</head>
+
+<body>
+    <div id="barra-de-navegacion">
+        <nav>
+            <a href="./">Inicio</a>
+            <a href="./servicios">Servicios</a>
+            <a href="./contactenos">Contáctenos</a>
+        </nav>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h2>Diseño Industrial</h2>
+                <div class="product-content">
+                    <div class="product-img">
+                        <img src="../Imagenes/diseñoindustrial.jpeg">
+                    </div>
+
+                    <div class="product-text">
+                        <p>Somos expertos en la creación, desarrollo y mejora de productos para que puedan ser fabricados de forma masiva.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn-1">Ver</a>
+            </div>
+            <div class="swiper-slide">
+                <h2>Mantenimientos</h2>
+                <div class="product-content">
+                    <div class="product-img">
+                        <img src="../Imagenes/mantenimientos.webp">
+                    </div>
+                    <div class="product-text">
+                        <p>Disponemos de tres tipos principales de mantenimiento: correctivo, preventivo y predictivo.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn-1">Ver</a>
+            </div>
+            <div class="swiper-slide">
+                <h2>Automatización</h2>
+                <div class="product-content">
+                    <div class="product-img">
+                        <img src="../Imagenes/automatizacion.jpg">
+                    </div>
+                    <div class="product-text">
+                        <p>Contamos con tecnologías punteras a través de sensores, transmisores de campo, sistemas de control, software y recolección de datos para nuestros procesos. </p>
+                    </div>
+                </div>
+                <a href="#" class="btn-1">Ver</a>
+            </div>
+            <div class="swiper-slide">
+                <h2>Soldadura</h2>
+                <div class="product-content">
+                    <div class="product-img">
+                        <img src="../Imagenes/soldadura.jpg">
+                    </div>
+                    <div class="product-text">
+                        <p>Utilizamos herramientas con dos tipos de soldadura para nuestros procesos: manual o cautín.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn-1">Ver</a>
+            </div>
+
+            <div class="swiper-slide">
+                <h2>Instalaciones Electricas</h2>
+                <div class="product-content">
+                    <div class="product-img">
+                        <img src="../Imagenes/instalacionelectrica.webp">
+                    </div>
+                    <div class="product-text">
+                        <p>Manejamos tipos de instalaciones que incluyen diferentes tipos de cableado, interruptores y otros dispositivos.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn-1">Ver</a>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            coverflowEffect: {
+                depth: 500,
+                modifer: 1,
+                slidesShadows: true,
+                rotate: 0,
+                stretch: 0
+            }
+        })
+    </script>
+</body>
+
+</html>
